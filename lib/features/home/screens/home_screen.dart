@@ -123,7 +123,9 @@ class HomeScreen extends StatelessWidget {
                       const SizedBox(height: 28),
                       GradientButton(
                         text: 'Start Practice',
-                        onPressed: () => context.go('/practice'),
+                        onPressed: () {
+                          context.push('/practice'); // Navigate using GoRouter
+                        },
                       ),
                     ],
                   ),
